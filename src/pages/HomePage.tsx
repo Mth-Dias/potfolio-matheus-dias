@@ -50,13 +50,13 @@ export default function HomePage() {
                 Matheus Dias
               </span>
               <div className="h-1 bg-black w-[0%] lg:group-hover:w-[100%] transition-all duration-300"></div>
-              <div className="flex justify-center pt-3">
+              <div className="flex justify-center lg:pt-3">
                 <button
                   onClick={() => navigate("/about")}
                   className="flex items-center gap-x-1 lg:text-2xl lg:group-hover:opacity-100 lg:opacity-0 transition-opacity duration-700 delay-75"
                 >
                   <span>about me</span>
-                  <span className="pt-[7px]">
+                  <span className="lg:pt-[7px]">
                     <HiArrowSmRight />
                   </span>
                 </button>
