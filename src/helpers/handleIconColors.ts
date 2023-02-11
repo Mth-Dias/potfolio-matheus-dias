@@ -16,6 +16,8 @@ export const handleColors = (iconName:string) => {
             return 'hover:text-[#99425b] hover:fill-[#99425b]'
         case 'Cypress':
             return 'hover:text-[#4a4a4d] hover:fill-[#4a4a4d]'
+        case 'Material UI':
+            return 'hover:text-[#00b0ff] hover:fill-[#00b0ff]'
         default:
     }
 }

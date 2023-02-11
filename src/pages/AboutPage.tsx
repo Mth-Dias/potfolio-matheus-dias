@@ -8,6 +8,7 @@ import TailwindIcon from "../components/icons/TailwindIcon";
 import ReduxIcon from "../components/icons/ReduxIcon";
 import JestIcon from "../components/icons/JestIcon";
 import CypressIcon from "../components/icons/CypressIcon";
+import MUIIcon from "../components/icons/MUIIcon";
 
 const TotalSkillsCards: { Icon: JSX.Element; name: string }[] = [
   {
@@ -42,6 +43,10 @@ const TotalSkillsCards: { Icon: JSX.Element; name: string }[] = [
     Icon: <CypressIcon/>,
     name: "Cypress"
   },
+  {
+    Icon: <MUIIcon/>,
+    name: "Material UI"
+  }
 ];
 
 export default function AboutPage() {
