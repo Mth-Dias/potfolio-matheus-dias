@@ -9,11 +9,9 @@ export default function NavBar() {
         className="w-52"
         draggable={false}
       />
-      <ul className="sm:flex gap-x-7 hidden">
+      <ul className="lg:flex gap-x-7 hidden">
         <NavItem href="/" value="Home" />
-        <NavItem href="/" value="Home" />
-        <NavItem href="/" value="Home" />
-        <NavItem href="/" value="Home" />
+        <NavItem href="/about" value="About" />
       </ul>
     </div>
   );
