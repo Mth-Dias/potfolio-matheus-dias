@@ -1,24 +1,26 @@
 import { AnimatePresence, motion } from "framer-motion";
 import NavItem from "../components/NavItem";
 import sidebarHook from "../hooks/sidebarHook";
+import { navItems } from "../helpers/data";
 
 export default function NavBar() {
   const { handleShrinkMenu, menuShrank } = sidebarHook();
 
   return (
-    <div className="transition-all duration-300 w-full border-b-2 border-black py-4 flex justify-between items-center px-5 lg:px-20 xl:px-52">
+    <div className="sticky top-0 bg-white transition-all duration-300 w-full border-b-2 border-black py-1 sm:py-4 flex justify-between items-center px-5 lg:px-20 xl:px-52 z-10">
       <img
         src="/assets/images/Logo.png"
         alt="Logo"
-        className="w-52"
+        className="w-36 sm:w-52"
         draggable={false}
       />
       <ul className="lg:flex gap-x-7 hidden">
-        <NavItem href="/" value="home" />
-        <NavItem href="/about" value="about" />
+        {navItems.map((item) => (
+          <NavItem href={item.href} value={item.value} />
+        ))}
       </ul>
       <button onClick={() => handleShrinkMenu()} className="lg:hidden block">
-        <svg className="" viewBox="0 0 100 80" width="40" height="40">
+        <svg className="" viewBox="0 0 100 80" width="28" height="28">
           <rect width="70" height="7"></rect>
           <rect y="30" width="70" height="7"></rect>
           <rect y="60" width="70" height="7"></rect>
@@ -30,7 +32,7 @@ export default function NavBar() {
             <motion.aside
               initial={{ width: 0 }}
               animate={{
-                width: 180,
+                width: 200,
               }}
               exit={{
                 width: 0,
@@ -59,12 +61,11 @@ export default function NavBar() {
                     </svg>
                   </button>
                 </div>
-                <button onClick={() => handleShrinkMenu()}>
-                  <NavItem href="/" value="Home" />
-                </button>
-                <button onClick={() => handleShrinkMenu()}>
-                  <NavItem href="/about" value="About" />
-                </button>
+                {navItems.map((item) => (
+                  <button onClick={() => handleShrinkMenu()}>
+                    <NavItem href={item.href} value={item.value} />
+                  </button>
+                ))}
               </motion.div>
             </motion.aside>
           )}
