@@ -9,8 +9,8 @@ export default function AboutPage() {
 
   return (
     <motion.div exit={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <section className="w-full">
-        <div className="lg:px-0 px-10 lg:text-left text-center lg:w-[60%] mx-auto py-10 lg:py-16 flex flex-col gap-y-12">
+      <section className="w-full flex justify-center">
+        <div className="xl:px-0 px-10 xl:text-left text-center xl:w-[60%] py-10 lg:py-16 flex flex-col gap-y-12">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
