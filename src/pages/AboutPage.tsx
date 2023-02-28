@@ -21,7 +21,7 @@ export default function AboutPage() {
             className="flex"
           >
             <h1 id="text" className="text-2xl lg:text-4xl mx-auto">
-              im a front-end developer, with knowledge in the following
+              front-end developer, with knowledge in the following
               technologies:
             </h1>
           </motion.div>
