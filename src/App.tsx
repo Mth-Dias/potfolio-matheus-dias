@@ -43,6 +43,11 @@ function App() {
       {
         method: "POST",
         body: data,
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Access-Control-Allow-Origin': '*',
+        },
       }
     )
       .then((res) => console.log(res))
