@@ -13,7 +13,7 @@ export const experiences: ExperienceType[] = [
   {
     title: "Web Developer",
     company: "RTB House",
-    start_date: "september/2022",
+    start_date: "september/2023",
     responsabilities: [
       "Creation of dynamic banners for Deep Learning-based advertisements.",
       "'Pixel Perfect' development based on mockups provided by Designers.",
