@@ -7,7 +7,7 @@ export default function HomePage() {
 
   return (
     <motion.div
-      exit={{ opacity: 0, x: "40%" }}
+      exit={{ opacity: 0 }}
       transition={{duration: 1}}
     >
       <section className="w-full flex">
@@ -20,19 +20,12 @@ export default function HomePage() {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            drag
-            dragConstraints={{
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-            }}
           >
             <img
               src="/assets/images/react.png"
               alt="React_logo"
               draggable={false}
-              className="animate-spin-slow w-[60vw] sm:w-[26rem] cursor-grab"
+              className="animate-spin-slow w-[60vw] sm:w-[26rem]"
             />
           </motion.div>
           <motion.div

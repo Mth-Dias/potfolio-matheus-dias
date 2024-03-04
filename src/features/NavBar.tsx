@@ -37,6 +37,7 @@ export default function NavBar() {
               exit={{
                 width: 0,
               }}
+              className="overflow-hidden"
             >
               <motion.div
                 animate={{

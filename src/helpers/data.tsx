@@ -11,9 +11,21 @@ import { ExperienceType, NavItemType, SkillsCardType } from "../types";
 
 export const experiences: ExperienceType[] = [
   {
+    title: "Web Developer",
+    company: "RTB House",
+    start_date: "september/2022",
+    responsabilities: [
+      "Creation of dynamic banners for Deep Learning-based advertisements.",
+      "'Pixel Perfect' development based on mockups provided by Designers.",
+      "Rigorous debugging of code for maximum performance of active banners.",
+      "Creation of custom animations using GSAP/Javascript library.",
+    ],
+  },
+  {
     title: "Front-end Developer",
     company: "Wivenn",
     start_date: "october/2022",
+    end_date: "july/2023",
     responsabilities: [
       "Responsible for Front-end development in the systems and websites supported by the company.",
       "Development of new features, improvements and bug fixes with React.js and Typescript.",
@@ -31,17 +43,7 @@ export const experiences: ExperienceType[] = [
       "Development of new features and improvements in the project with React.JS and Javascript.",
     ],
   },
-  {
-    title: "Support Analyst",
-    company: "Parceiro Digital",
-    start_date: "may/2021",
-    end_date: "feb/2022",
-    responsabilities: [
-      "Office 365 Support (administration of users, groups, emails, password reset).",
-      "Remote and in-person Technical Support (Windows Configuration, Outlook, Office 365).",
-      "Layout development for institutional/e-commerce sites, domain configuration, hosting and WordPress setup.",
-    ],
-  },
+ 
 ];
 
 export const navItems: NavItemType[] = [
